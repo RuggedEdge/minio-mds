@@ -19,105 +19,80 @@ import { createGlobalStyle } from "styled-components";
 import get from "lodash/get";
 import { darkColors, lightColors } from "../../global/themes";
 
-const InterBlackWoff = require("../assets/fonts/Inter/Inter-Black.woff");
-const InterBlackItalicWoff = require("../assets/fonts/Inter/Inter-BlackItalic.woff");
-const InterBoldWoff = require("../assets/fonts/Inter/Inter-Bold.woff");
-const InterBoldItalicWoff = require("../assets/fonts/Inter/Inter-BoldItalic.woff");
-const InterItalicWoff = require("../assets/fonts/Inter/Inter-Italic.woff");
-const InterLightWoff = require("../assets/fonts/Inter/Inter-Light.woff");
-const InterLightItalicWoff = require("../assets/fonts/Inter/Inter-LightItalic.woff");
-const InterRegularWoff = require("../assets/fonts/Inter/Inter-Regular.woff");
-const InterThinWoff = require("../assets/fonts/Inter/Inter-Thin.woff");
-const InterBlackWoff2 = require("../assets/fonts/Inter/Inter-Black.woff2");
-const InterBlackItalicWoff2 = require("../assets/fonts/Inter/Inter-BlackItalic.woff2");
-const InterBoldWoff2 = require("../assets/fonts/Inter/Inter-Bold.woff2");
-const InterBoldItalicWoff2 = require("../assets/fonts/Inter/Inter-BoldItalic.woff2");
-const InterItalicWoff2 = require("../assets/fonts/Inter/Inter-Italic.woff2");
-const InterLightWoff2 = require("../assets/fonts/Inter/Inter-Light.woff2");
-const InterLightItalicWoff2 = require("../assets/fonts/Inter/Inter-LightItalic.woff2");
-const InterRegularWoff2 = require("../assets/fonts/Inter/Inter-Regular.woff2");
-const InterThinWoff2 = require("../assets/fonts/Inter/Inter-Thin.woff2");
+const ARGBlackWoff = require("../assets/fonts/allroundgothic/allroundgothic-book-webfont.woff");
+const ARGBoldWoff = require("../assets/fonts/allroundgothic/allroundgothic-bold-webfont.woff");
 
 const GlobalStyles = createGlobalStyle`
     ${({ theme }) => {
       return `
     /* Fonts */
     @font-face {
-      font-family: "Inter";
-      src: url(${InterBlackItalicWoff2}) format("woff2"),
-        url(${InterBlackItalicWoff}) format("woff");
+      font-family: "AllRoundGothic";
+      src: url(${ARGBlackWoff}) format("woff");
       font-weight: 900;
       font-style: italic;
       font-display: swap;
     }
     
     @font-face {
-      font-family: "Inter";
-      src: url(${InterBoldWoff2}) format("woff2"),
-        url(${InterBoldWoff}) format("woff");
+      font-family: "AllRoundGothic";
+      src: url(${ARGBoldWoff}) format("woff");
       font-weight: bold;
       font-style: normal;
       font-display: swap;
     }
     
     @font-face {
-      font-family: "Inter";
-      src: url(${InterBoldItalicWoff2}) format("woff2"),
-        url(${InterBoldItalicWoff}) format("woff");
+      font-family: "AllRoundGothic";
+      src: url(${ARGBoldWoff}) format("woff");
       font-weight: bold;
       font-style: italic;
       font-display: swap;
     }
     
     @font-face {
-      font-family: "Inter";
-      src: url(${InterLightWoff2}) format("woff2"),
-        url(${InterLightWoff}) format("woff");
+      font-family: "AllRoundGothic";
+      src: url(${ARGBlackWoff}) format("woff");
       font-weight: 300;
       font-style: normal;
       font-display: swap;
     }
     
     @font-face {
-      font-family: "Inter";
-      src: url(${InterBlackWoff2}) format("woff2"),
-        url(${InterBlackWoff}) format("woff");
+      font-family: "AllRoundGothic";
+      src: url(${ARGBlackWoff}) format("woff");
       font-weight: 900;
       font-style: normal;
       font-display: swap;
     }
     
     @font-face {
-      font-family: "Inter";
-      src: url(${InterItalicWoff2}) format("woff2"),
-        url(${InterItalicWoff}) format("woff");
+      font-family: "AllRoundGothic";
+      src: url(${ARGBlackWoff}) format("woff");
       font-weight: normal;
       font-style: italic;
       font-display: swap;
     }
     
     @font-face {
-      font-family: "Inter";
-      src: url(${InterRegularWoff2}) format("woff2"),
-        url(${InterRegularWoff}) format("woff");
+      font-family: "AllRoundGothic";
+      src: url(${ARGBlackWoff}) format("woff");
       font-weight: normal;
       font-style: normal;
       font-display: swap;
     }
     
     @font-face {
-      font-family: "Inter";
-      src: url(${InterLightItalicWoff2}) format("woff2"),
-        url(${InterLightItalicWoff}) format("woff");
+      font-family: "AllRoundGothic";
+     src: url(${ARGBlackWoff}) format("woff");
       font-weight: 300;
       font-style: italic;
       font-display: swap;
     }
     
     @font-face {
-      font-family: "Inter";
-      src: url(${InterThinWoff2}) format("woff2"),
-        url(${InterThinWoff}) format("woff");
+      font-family: "AllRoundGothic";
+     src: url(${ARGBlackWoff}) format("woff");
       font-weight: 100;
       font-style: normal;
       font-display: swap;
@@ -142,7 +117,7 @@ const GlobalStyles = createGlobalStyle`
         color: ${get(theme, "fontColor", lightColors.defaultFontColor)};
         height: 100vh;
         width: 100vw;
-        font-family: 'Inter', sans-serif;
+        font-family: 'AllRoundGothic', sans-serif;
         margin: 0;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;

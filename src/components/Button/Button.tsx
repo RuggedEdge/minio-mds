@@ -69,7 +69,7 @@ const CustomButton = styled.button<
       cursor: "pointer",
       width: fullWidth ? "100%" : "initial",
       height: 39,
-      fontFamily: "'Inter', sans-serif",
+      fontFamily: "'AllRoundGothic', sans-serif",
       fontWeight: "400",
       fontSize: 14,
       display: "flex",

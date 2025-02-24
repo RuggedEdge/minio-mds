@@ -136,7 +136,7 @@ const OptionElement = styled.span(({ theme }) => ({
     },
   },
   "& .labelContainer": {
-    fontFamily: "'Inter', sans-serif",
+    fontFamily: "'AllRoundGothic', sans-serif",
     fontSize: 14,
   },
 }));

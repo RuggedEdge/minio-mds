@@ -20,13 +20,13 @@ import get from "lodash/get";
 import { MenuConstructProps, MenuProps } from "../Menu.types";
 import { lightColors } from "../../../global/themes";
 import Box from "../../Box/Box";
-import ApplicationLogo from "../../ApplicationLogo/ApplicationLogo";
 import CollapseMenuIcon from "../../Icons/CollapseMenuIcon";
+import REDNetFiles from "../../Icons/REDNetFiles";
 import MenuItem from "./MenuItem";
 import MenuSectionHeader from "./MenuSectionHeader";
 import LogoutIcon from "../../Icons/LogoutIcon";
 import Tooltip from "../../Tooltip/Tooltip";
-import MinIOTierIconXs from "../../Icons/MinIOTierIconXs";
+import REDNetFilesLogo from "../../Icons/REDNetFilesLogo";
 import MenuDivider from "../Common/MenuDivider";
 
 const VerticalMenuDrawer = styled.div<MenuConstructProps>(({ theme, sx }) => {
@@ -226,12 +226,13 @@ const VerticalMenu: FC<MenuProps> = ({
             <CollapseMenuIcon />
           </Box>
           <Box className={"menuLogoContainer"}>
-            <ApplicationLogo inverse {...applicationLogo} />
+              <REDNetFiles />
+              <div style={{color: "#3E6549", fontSize: '20px', fontWeight: 'bold', display:'inline-flex', position: 'fixed', paddingLeft: '20px'}}>REDNet FILES</div>
           </Box>
           <Box className={"collapsedMenuHeader"}>
             <Tooltip tooltip={"Expand Menu"} placement={"right"}>
               <span className={"collapsedIcon"}>
-                <MinIOTierIconXs />
+                <REDNetFilesLogo />
               </span>
             </Tooltip>
           </Box>
